@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-background-grey">
   <head>
     <title>MyDevise2</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,6 +11,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'shared/flash' if notice %>
+    <section class="container">
+      <%= yield %>
+    </section>
   </body>
 </html>

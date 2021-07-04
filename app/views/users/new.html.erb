@@ -1,0 +1,12 @@
+<h1 class="title">註冊頁面</h1>
+<hr>
+<%= form_for(@user) do |f| %>
+  <div class="field">
+    <%= f.text_field :name, placeholder: 'Name', class: 'input is-medium' %>
+  </div>
+  <div class="field">
+    <%= f.password_field :password, placeholder: 'Password', class: 'input is-medium' %>
+  </div>
+  <hr>
+  <%= f.submit '註冊', class: 'button is-medium is-dark' %>
+<% end %>
